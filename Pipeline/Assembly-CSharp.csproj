@@ -60,6 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EXBehavior.cs" />
+    <Compile Include="Assets\IFBehavior.cs" />
     <Compile Include="Assets\OpScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/ferfa/OneDrive/Documentos/GitHub/Pepiline/Pipeline/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

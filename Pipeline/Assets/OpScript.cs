@@ -6,12 +6,14 @@ public class OpScript : MonoBehaviour
 {
 	public enum Tipo { TipoR, TipoI, Lw, Sw };
 
-	private Tipo tipo = Tipo.TipoR;
-	private string rd, rs, rt;
-	private string imm;
-	private string end;
+	public Tipo tipo = Tipo.TipoR;
+	public string rd, rs, rt;
+	public string imm;
+	public string end;
 
-	public Tipo getRTipo() { return tipo; }
+	public Color onColor;
+
+	public Tipo getTipo() { return tipo; }
 	public void setTipo(Tipo tipo) { this.tipo = tipo; }
 
 	public string getRd() { return rd; }
