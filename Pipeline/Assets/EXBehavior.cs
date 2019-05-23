@@ -82,13 +82,44 @@ public class EXBehavior : MonoBehaviour
 					imm3.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					rd1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					rd2.GetComponent<SpriteRenderer>().color = Color.white;
-					rdFinal.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
 					dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
 					dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
 					ULAOut.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 
 					break;
+
+				default:
+
+					input1.GetComponent<SpriteRenderer>().color = Color.white;
+					input2.GetComponent<SpriteRenderer>().color = Color.white;
+					readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
+					imm1.GetComponent<SpriteRenderer>().color = Color.white;
+					imm2.GetComponent<SpriteRenderer>().color = Color.white;
+					imm3.GetComponent<SpriteRenderer>().color = Color.white;
+					rd1.GetComponent<SpriteRenderer>().color = Color.white;
+					rd2.GetComponent<SpriteRenderer>().color = Color.white;
+					rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
+					dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
+					dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
+					ULAOut.GetComponent<SpriteRenderer>().color = Color.white;
+					break;
 			}
+		}
+		else
+		{
+			input1.GetComponent<SpriteRenderer>().color = Color.white;
+			input2.GetComponent<SpriteRenderer>().color = Color.white;
+			readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
+			imm1.GetComponent<SpriteRenderer>().color = Color.white;
+			imm2.GetComponent<SpriteRenderer>().color = Color.white;
+			imm3.GetComponent<SpriteRenderer>().color = Color.white;
+			rd1.GetComponent<SpriteRenderer>().color = Color.white;
+			rd2.GetComponent<SpriteRenderer>().color = Color.white;
+			rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
+			dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
+			dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
+			ULAOut.GetComponent<SpriteRenderer>().color = Color.white;
 		}
 	}
 }
