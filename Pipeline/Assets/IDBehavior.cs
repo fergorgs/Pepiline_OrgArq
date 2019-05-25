@@ -94,6 +94,7 @@ public class IDBehavior : MonoBehaviour
 		}
 		else
 		{
+			fromIf.GetComponent<SpriteRenderer>().color = Color.white;
 			fioRS.GetComponent<SpriteRenderer>().color = Color.white;
 			fioRT.GetComponent<SpriteRenderer>().color = Color.white;
 			dataReadRS.GetComponent<SpriteRenderer>().color = Color.white;
