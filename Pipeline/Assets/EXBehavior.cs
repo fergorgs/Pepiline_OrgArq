@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EXBehavior : MonoBehaviour
+public class EXBehavior : GenericStepBehavior
 {
-	public GameObject oper;
+	//public GameObject oper;
 
 	public GameObject input1, input2, readDataRT, imm1, imm2, imm3, rd1, rd2, rdFinal, dataWrite1, dataWrite2, ULAOut;
 

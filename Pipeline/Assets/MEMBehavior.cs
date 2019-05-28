@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MEMBehavior : MonoBehaviour
+public class MEMBehavior : GenericStepBehavior
 {
-	public GameObject oper;
+	//public GameObject oper;
 
 	public GameObject addULA, address, writeData, readData, ULAOut1, ULAOut2, rd;
 

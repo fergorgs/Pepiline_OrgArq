@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IDBehavior : MonoBehaviour
+public class IDBehavior : GenericStepBehavior
 {
-	public GameObject oper;
+	//public GameObject oper;
 
 	public GameObject fioRS, fioRT, dataReadRS, dataReadRT, imm, rd1, rd2, toReg1, toReg2, toImm, toRD1, toRD2, fromIf;
 

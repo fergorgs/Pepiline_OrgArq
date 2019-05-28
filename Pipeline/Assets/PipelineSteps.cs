@@ -41,14 +41,14 @@ public class PipelineSteps : MonoBehaviour
 	public void insertInstruction()
 	{
 		GameObject newOp = Instantiate(seedInstruction);
-		newOp.GetComponent<OpScript>().onColor = new Color(Random.Range(0.25f, 0.75f), Random.Range(0.25f, 0.75f), Random.Range(0.25f, 0.75f));
+		newOp.GetComponent<OpScript>().onColor = new Color(Random.Range(0.5f, 1f), Random.Range(0.5f, 1f), Random.Range(0.5f, 1f));
 		newOp.tag = null;
 
 		Debug.Log("color = " + newOp.GetComponent<OpScript>().onColor);
 
 		switch (dropMenu.GetComponent<Dropdown>().value)
 		{
-			case 1: //Tipo R
+			case 0: //Tipo R
 
 				newOp.GetComponent<OpScript>().tipo = OpScript.Tipo.TipoR;
 				newOp.GetComponent<OpScript>().rd = field1.GetComponent<Text>().text;
@@ -56,7 +56,7 @@ public class PipelineSteps : MonoBehaviour
 				newOp.GetComponent<OpScript>().rt = field2.GetComponent<Text>().text;
 				break;
 
-			case 2: //Tipo I
+			case 1: //Tipo I
 
 				newOp.GetComponent<OpScript>().tipo = OpScript.Tipo.TipoI;
 				newOp.GetComponent<OpScript>().rd = field1.GetComponent<Text>().text;
@@ -64,7 +64,7 @@ public class PipelineSteps : MonoBehaviour
 				newOp.GetComponent<OpScript>().imm = field3.GetComponent<Text>().text;
 				break;
 
-			case 3: //LW
+			case 2: //LW
 
 				newOp.GetComponent<OpScript>().tipo = OpScript.Tipo.Lw;
 				newOp.GetComponent<OpScript>().rd = field1.GetComponent<Text>().text;
@@ -72,7 +72,7 @@ public class PipelineSteps : MonoBehaviour
 				newOp.GetComponent<OpScript>().rs = field3.GetComponent<Text>().text;
 				break;
 
-			case 4: //Sw
+			case 3: //Sw
 
 				newOp.GetComponent<OpScript>().tipo = OpScript.Tipo.Sw;
 				newOp.GetComponent<OpScript>().rd = field1.GetComponent<Text>().text;
@@ -80,7 +80,7 @@ public class PipelineSteps : MonoBehaviour
 				newOp.GetComponent<OpScript>().rs = field3.GetComponent<Text>().text;
 				break;
 
-			case 5: //nop
+			case 4: //nop
 
 				newOp = null;
 				break;
@@ -90,7 +90,7 @@ public class PipelineSteps : MonoBehaviour
 		IF.GetComponent<IFBehavior>().oper = newOp;
 	}
 
-	void oneRight()
+	public void oneRight()
 	{
 		if (WB.GetComponent<WBBehavior>().oper != null)
 			doneOp.Push(WB.GetComponent<WBBehavior>().oper);
@@ -106,7 +106,7 @@ public class PipelineSteps : MonoBehaviour
 		IF.GetComponent<IFBehavior>().oper = null;
 	}
 
-	void oneLeft()
+	public void oneLeft()
 	{
 		IF.GetComponent<IFBehavior>().oper = ID.GetComponent<IDBehavior>().oper;
 		ID.GetComponent<IDBehavior>().oper = EX.GetComponent<EXBehavior>().oper;

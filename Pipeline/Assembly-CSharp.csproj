@@ -62,11 +62,13 @@
   <ItemGroup>
     <Compile Include="Assets\EX_MEMBehavior.cs" />
     <Compile Include="Assets\EXBehavior.cs" />
+    <Compile Include="Assets\GenericStepBehavior.cs" />
     <Compile Include="Assets\ID_EXBehavior.cs" />
     <Compile Include="Assets\IDBehavior.cs" />
     <Compile Include="Assets\IF_IDBehavior.cs" />
     <Compile Include="Assets\IFBehavior.cs" />
     <Compile Include="Assets\inputHandler.cs" />
+    <Compile Include="Assets\InstructionLabelScript.cs" />
     <Compile Include="Assets\MEM_WBBehavior.cs" />
     <Compile Include="Assets\MEMBehavior.cs" />
     <Compile Include="Assets\OpScript.cs" />

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IFBehavior : MonoBehaviour
+public class IFBehavior : GenericStepBehavior
 {
-	public GameObject oper;
+	//public GameObject oper;
 
 	public GameObject instruction;
 

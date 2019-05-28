@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WBBehavior : MonoBehaviour
+public class WBBehavior : GenericStepBehavior
 {
-	public GameObject oper;
+	//public GameObject oper;
 
 	public GameObject readData, ULAOut1, ULAOut2, ULAOut3, writeData1, writeData2, writeData3, writeData4, writeData5, rd1, rd2, rd3, rd4, rd5;
 
