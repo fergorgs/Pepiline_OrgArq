@@ -41,7 +41,18 @@ public class PipelineSteps : MonoBehaviour
 	public void insertInstruction()
 	{
 		GameObject newOp = Instantiate(seedInstruction);
-		newOp.GetComponent<OpScript>().onColor = new Color(Random.Range(0.5f, 1f), Random.Range(0.5f, 1f), Random.Range(0.5f, 1f));
+
+		Color cl;
+		float rg = Random.Range(0f, 1f);
+
+		if(rg <= 3.3f)
+			cl = new Color(Random.Range(0.5f, 1f), Random.Range(0f, 0.5f), Random.Range(0f, 0.5f));
+		else if (rg <= 6.6f)
+			cl = new Color(Random.Range(0f, 0.5f), Random.Range(0.5f, 1f), Random.Range(0f, 0.5f));
+		else
+			cl = new Color(Random.Range(0f, 0.5f), Random.Range(0f, 0.5f), Random.Range(0.5f, 1f));
+
+		newOp.GetComponent<OpScript>().onColor = cl;
 		newOp.tag = null;
 
 		Debug.Log("color = " + newOp.GetComponent<OpScript>().onColor);
