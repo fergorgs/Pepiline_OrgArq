@@ -31,7 +31,7 @@ public class PipelineSteps : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.LeftArrow))
 			oneLeft();
 
-		Debug.Log("name = " + seedInstruction.name);
+		//Debug.Log("name = " + seedInstruction.name);
 	}
 
 	//Debug.Log("name = " + seedInstruction.name);
@@ -43,7 +43,7 @@ public class PipelineSteps : MonoBehaviour
 		GameObject newOp = Instantiate(seedInstruction);
 
 		Color cl;
-		float rg = Random.Range(0f, 1f);
+		float rg = Random.Range(0f, 10f);
 
 		if(rg <= 3.3f)
 			cl = new Color(Random.Range(0.5f, 1f), Random.Range(0f, 0.5f), Random.Range(0f, 0.5f));
@@ -53,9 +53,9 @@ public class PipelineSteps : MonoBehaviour
 			cl = new Color(Random.Range(0f, 0.5f), Random.Range(0f, 0.5f), Random.Range(0.5f, 1f));
 
 		newOp.GetComponent<OpScript>().onColor = cl;
-		newOp.tag = null;
+		//newOp.tag = null;
 
-		Debug.Log("color = " + newOp.GetComponent<OpScript>().onColor);
+		//Debug.Log("color = " + newOp.GetComponent<OpScript>().onColor);
 
 		switch (dropMenu.GetComponent<Dropdown>().value)
 		{
@@ -99,7 +99,8 @@ public class PipelineSteps : MonoBehaviour
 
 		oneRight();
 		IF.GetComponent<IFBehavior>().oper = newOp;
-	}
+        updateAll();
+    }
 
 	public void oneRight()
 	{
@@ -115,6 +116,8 @@ public class PipelineSteps : MonoBehaviour
 		ID.GetComponent<IDBehavior>().oper = IF.GetComponent<IFBehavior>().oper;
 		IF_ID.GetComponent<IF_IDBehavior>().oper = IF.GetComponent<IFBehavior>().oper;
 		IF.GetComponent<IFBehavior>().oper = null;
+
+        updateAll();
 	}
 
 	public void oneLeft()
@@ -137,5 +140,15 @@ public class PipelineSteps : MonoBehaviour
 			WB.GetComponent<WBBehavior>().oper = null;
 			MEM_WB.GetComponent<MEM_WBBehavior>().oper = null;
 		}
-	}
+        updateAll();
+    }
+
+    private void updateAll()
+    {
+        //IF.GetComponent<IFBehavior>().UpdateMe();
+        ID.GetComponent<IDBehavior>().UpdateMe();
+        EX.GetComponent<EXBehavior>().UpdateMe();
+        //MEM.GetComponent<MEMBehavior>().UpdateMe();
+        //WB.GetComponent<WBBehavior>().UpdateMe();
+    }
 }

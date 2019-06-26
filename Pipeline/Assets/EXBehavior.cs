@@ -15,77 +15,100 @@ public class EXBehavior : GenericStepBehavior
 	}
 
 	// Update is called once per frame
-	void Update()
+	public override void UpdateMe()
 	{
-		if (oper != null)
+
+        if (oper != null)
 		{
-			switch (oper.GetComponent<OpScript>().getTipo())
+            OpScript operationScript = oper.GetComponent<OpScript>();
+			switch (operationScript.getTipo())
 			{
 				case OpScript.Tipo.TipoR:
 
-					input1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					input2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					readDataRT.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					imm1.GetComponent<SpriteRenderer>().color = Color.white;
-					imm2.GetComponent<SpriteRenderer>().color = Color.white;
-					imm3.GetComponent<SpriteRenderer>().color = Color.white;
-					rd1.GetComponent<SpriteRenderer>().color = Color.white;
-					rd2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					rdFinal.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
-					dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
-					ULAOut.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					input1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    input1.GetComponent<FioBehavior>().ChangeDisplay("conteudo(" + operationScript.rs + ")");
+
+					input2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    input2.GetComponent<FioBehavior>().ChangeDisplay("conteudo(" + operationScript.rt + ")");
+
+                    readDataRT.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    readDataRT.GetComponent<FioBehavior>().ChangeDisplay("conteudo(" + operationScript.rt + ")");
+
+                    imm1.GetComponent<SpriteRenderer>().color = Color.white;
+                    imm1.GetComponent<FioBehavior>().ChangeDisplay("");
+                    imm2.GetComponent<SpriteRenderer>().color = Color.white;
+                    imm2.GetComponent<FioBehavior>().ChangeDisplay("");
+                    imm3.GetComponent<SpriteRenderer>().color = Color.white;
+                    imm3.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    rd1.GetComponent<SpriteRenderer>().color = Color.white;
+                    rd1.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    rd2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    rd2.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rd);
+
+                    rdFinal.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    rdFinal.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rd);
+
+                    dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
+                    dataWrite1.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
+                    dataWrite2.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    ULAOut.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    ULAOut.GetComponent<FioBehavior>().ChangeDisplay("conteudo(" + operationScript.rt + ") + " + "conteudo(" + operationScript.rs + ")");
 
 					break;
 
 				case OpScript.Tipo.TipoI:
 
-					input1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					input2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					input1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					input2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 					readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
-					imm1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					imm2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					imm3.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					rd1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					imm1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					imm2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					imm3.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					rd1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 					rd2.GetComponent<SpriteRenderer>().color = Color.white;
-					rdFinal.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					rdFinal.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 					dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
 					dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
-					ULAOut.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					ULAOut.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 
 					break;
 
 				case OpScript.Tipo.Lw:
 
-					input1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					input2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					input1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					input2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 					readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
-					imm1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					imm2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					imm3.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					rd1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					imm1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					imm2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					imm3.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					rd1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 					rd2.GetComponent<SpriteRenderer>().color = Color.white;
-					rdFinal.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					dataWrite1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					dataWrite2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					ULAOut.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					rdFinal.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					dataWrite1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					dataWrite2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					ULAOut.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 
 					break;
 
 				case OpScript.Tipo.Sw:
 
-					input1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					input2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					input1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					input2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 					readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
-					imm1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					imm2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					imm3.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					rd1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					imm1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					imm2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					imm3.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+					rd1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 					rd2.GetComponent<SpriteRenderer>().color = Color.white;
 					rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
 					dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
 					dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
-					ULAOut.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+					ULAOut.GetComponent<SpriteRenderer>().color = operationScript.onColor;
 
 					break;
 

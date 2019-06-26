@@ -275,6 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72619869}
   - component: {fileID: 72619868}
+  - component: {fileID: 72619870}
   m_Layer: 0
   m_Name: Fio 8 to Reg 2
   m_TagString: Untagged
@@ -342,8 +343,20 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.06, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &72619870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72619867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &90488155
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,6 +920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174786503}
   - component: {fileID: 174786504}
+  - component: {fileID: 174786505}
   m_Layer: 0
   m_Name: Fio 7 RD (2)
   m_TagString: Untagged
@@ -922,11 +936,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174786502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.79, z: -0.0016517248}
-  m_LocalScale: {x: 7.7999997, y: 0.06, z: 1}
+  m_LocalPosition: {x: 0, y: -7.771, z: -0.0016517248}
+  m_LocalScale: {x: 7.7999997, y: 0.08256, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &174786504
 SpriteRenderer:
@@ -976,6 +990,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &174786505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174786502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &204658876
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,6 +1012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 204658877}
   - component: {fileID: 204658878}
+  - component: {fileID: 204658879}
   m_Layer: 0
   m_Name: Fio 5 ULA Output
   m_TagString: Untagged
@@ -1055,6 +1082,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &204658879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204658876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &227368222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,8 +1392,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283251819}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.4, y: 11.94, z: -0.0016517248}
-  m_LocalScale: {x: 24.3, y: 0.06, z: 1}
+  m_LocalPosition: {x: 18.4, y: 11.944, z: -0.0016517248}
+  m_LocalScale: {x: 24.3, y: 0.064643994, z: 1}
   m_Children: []
   m_Father: {fileID: 1148961287}
   m_RootOrder: 6
@@ -1841,7 +1880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: 180}
+  m_AnchoredPosition: {x: 157, y: 146}
   m_SizeDelta: {x: 60, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382782339
@@ -1944,6 +1983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400429945}
   - component: {fileID: 400429946}
+  - component: {fileID: 400429947}
   m_Layer: 0
   m_Name: Fio 4 Input 2
   m_TagString: Untagged
@@ -2013,6 +2053,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &400429947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400429944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &422788269
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,6 +2434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433273092}
   - component: {fileID: 433273093}
+  - component: {fileID: 433273094}
   m_Layer: 0
   m_Name: Fio 6 RD (1)
   m_TagString: Untagged
@@ -2451,6 +2504,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &433273094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433273091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &441261482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,6 +2526,7 @@ GameObject:
   m_Component:
   - component: {fileID: 441261483}
   - component: {fileID: 441261484}
+  - component: {fileID: 441261485}
   m_Layer: 0
   m_Name: Fio 3 Imm (1)
   m_TagString: Untagged
@@ -2530,6 +2596,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &441261485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441261482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &455441734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,8 +2760,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459041368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.51, y: 0.18, z: -0.0016517248}
-  m_LocalScale: {x: 1.29, y: 0.06, z: 1}
+  m_LocalPosition: {x: -7.5, y: 0.1533, z: -0.0016517248}
+  m_LocalScale: {x: 1.2991589, y: 0.09123, z: 1}
   m_Children: []
   m_Father: {fileID: 900465091}
   m_RootOrder: 1
@@ -2698,6 +2776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491384916}
   - component: {fileID: 491384917}
+  - component: {fileID: 491384918}
   m_Layer: 0
   m_Name: Fio 3 Read Data RS
   m_TagString: Untagged
@@ -2717,7 +2796,7 @@ Transform:
   m_LocalScale: {x: 2.96149, y: 0.06, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &491384917
 SpriteRenderer:
@@ -2767,6 +2846,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &491384918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491384915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &501767576
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,6 +2868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501767577}
   - component: {fileID: 501767578}
+  - component: {fileID: 501767579}
   m_Layer: 0
   m_Name: Fio 2 ReadData RT
   m_TagString: Untagged
@@ -2846,6 +2938,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &501767579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501767576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &510019474
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,6 +3039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 512734323}
   - component: {fileID: 512734324}
+  - component: {fileID: 512734325}
   m_Layer: 0
   m_Name: Fio 8 RD Final
   m_TagString: Untagged
@@ -3004,6 +3109,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &512734325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512734322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &557664857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,7 +3277,7 @@ Transform:
   m_LocalScale: {x: 1.2600005, y: 0.06000003, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &591403234
 GameObject:
@@ -3314,8 +3431,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633713395}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -10.5, y: -3.61, z: -0.0016517248}
-  m_LocalScale: {x: -1.17, y: 0.06, z: 1}
+  m_LocalPosition: {x: -10.4961, y: -3.61, z: -0.0016517248}
+  m_LocalScale: {x: -1.17, y: 0.064608, z: 1}
   m_Children: []
   m_Father: {fileID: 1962688132}
   m_RootOrder: 3
@@ -3358,7 +3475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -335, y: 180}
+  m_AnchoredPosition: {x: -123, y: 146}
   m_SizeDelta: {x: 60, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &635212477
@@ -3794,6 +3911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702772924}
   - component: {fileID: 702772925}
+  - component: {fileID: 702772926}
   m_Layer: 0
   m_Name: Fio 9 Data Write
   m_TagString: Untagged
@@ -3863,6 +3981,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &702772926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702772923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &710304394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3967,8 +4097,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720565997}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -5.25, y: 5.11, z: -0.0016517248}
-  m_LocalScale: {x: 3.73, y: 0.06000003, z: 1}
+  m_LocalPosition: {x: -5.192, y: 5.11, z: -0.0016517248}
+  m_LocalScale: {x: 3.73, y: 0.12792006, z: 1}
   m_Children: []
   m_Father: {fileID: 1148961287}
   m_RootOrder: 8
@@ -4173,6 +4303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 780580202}
   - component: {fileID: 780580203}
+  - component: {fileID: 780580204}
   m_Layer: 0
   m_Name: Fio 5 Imm
   m_TagString: Untagged
@@ -4192,7 +4323,7 @@ Transform:
   m_LocalScale: {x: 7.8, y: 0.06, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &780580203
 SpriteRenderer:
@@ -4242,6 +4373,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &780580204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780580201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &847391848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4638,7 +4781,7 @@ Transform:
   m_LocalScale: {x: 0.89, y: 0.06000003, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &909142078
 GameObject:
@@ -4946,8 +5089,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980643350}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -5.14, y: 7.1, z: -0.0016517248}
-  m_LocalScale: {x: 1.6, y: 0.06000003, z: 1}
+  m_LocalPosition: {x: -5.1931, y: 7.1, z: -0.0016517248}
+  m_LocalScale: {x: 1.6, y: 0.14095442, z: 1}
   m_Children: []
   m_Father: {fileID: 900465091}
   m_RootOrder: 9
@@ -5089,6 +5232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001438409}
   - component: {fileID: 1001438410}
+  - component: {fileID: 1001438411}
   m_Layer: 0
   m_Name: Fio 9 Data Write (1)
   m_TagString: Untagged
@@ -5158,6 +5302,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1001438411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001438408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1010904867
 GameObject:
   m_ObjectHideFlags: 0
@@ -5247,6 +5403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020616093}
   - component: {fileID: 1020616092}
+  - component: {fileID: 1020616094}
   m_Layer: 0
   m_Name: Fio 9 to Reg 1
   m_TagString: Untagged
@@ -5314,8 +5471,20 @@ Transform:
   m_LocalScale: {x: 0.59, y: 0.06000003, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1020616094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020616091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1042500165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5718,7 +5887,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1479010167}
-  - {fileID: 1786910628}
   - {fileID: 1970802393}
   - {fileID: 491384916}
   - {fileID: 1974806849}
@@ -5733,6 +5901,7 @@ Transform:
   - {fileID: 1841659173}
   - {fileID: 1461912093}
   - {fileID: 1884346447}
+  - {fileID: 1786910628}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5851,6 +6020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1128869837}
   - component: {fileID: 1128869838}
+  - component: {fileID: 1128869839}
   m_Layer: 0
   m_Name: Fio 3 Imm (2)
   m_TagString: Untagged
@@ -5920,6 +6090,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1128869839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128869836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1131901578
 GameObject:
   m_ObjectHideFlags: 0
@@ -6093,7 +6275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -265, y: 180}
+  m_AnchoredPosition: {x: -53, y: 146}
   m_SizeDelta: {x: 60, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240228141
@@ -6234,7 +6416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -125, y: 180}
+  m_AnchoredPosition: {x: 87, y: 146}
   m_SizeDelta: {x: 60, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244251257
@@ -6668,8 +6850,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340220987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.01, y: 0.18, z: -0.0016517248}
-  m_LocalScale: {x: 2.96149, y: 0.06, z: 1}
+  m_LocalPosition: {x: 4.01, y: 0.158, z: -0.0016517248}
+  m_LocalScale: {x: 2.96149, y: 0.08598, z: 1}
   m_Children: []
   m_Father: {fileID: 900465091}
   m_RootOrder: 4
@@ -6940,7 +7122,7 @@ Transform:
   m_LocalScale: {x: 8.03, y: 0.06, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1461912094
 SpriteRenderer:
@@ -7247,6 +7429,97 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1512009892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1512009893}
+  - component: {fileID: 1512009895}
+  - component: {fileID: 1512009894}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1512009893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512009892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 30, z: 0}
+  m_LocalScale: {x: 0.5, y: 20, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1786910628}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!102 &1512009894
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512009892}
+  m_Text: 
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+--- !u!23 &1512009895
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512009892}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1515066351
 GameObject:
   m_ObjectHideFlags: 0
@@ -7320,8 +7593,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515066351}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -57.62, y: -8.4, z: -0.0016517248}
-  m_LocalScale: {x: -5.7, y: 0.06, z: 1}
+  m_LocalPosition: {x: -57.6263, y: -8.3924, z: -0.0016517248}
+  m_LocalScale: {x: -5.7068396, y: 0.07884662, z: 1}
   m_Children: []
   m_Father: {fileID: 1962688132}
   m_RootOrder: 8
@@ -7477,7 +7750,7 @@ Transform:
   m_LocalScale: {x: 0.95, y: 0.06000003, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1581116345
 GameObject:
@@ -7589,6 +7862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624967667}
   - component: {fileID: 1624967668}
+  - component: {fileID: 1624967669}
   m_Layer: 0
   m_Name: Fio 6 RD (1)
   m_TagString: Untagged
@@ -7604,11 +7878,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624967666}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.84, z: -0.0016517248}
-  m_LocalScale: {x: 7.7999997, y: 0.06, z: 1}
+  m_LocalPosition: {x: 0, y: -5.879, z: -0.0016517248}
+  m_LocalScale: {x: 7.7999997, y: 0.105119996, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1624967668
 SpriteRenderer:
@@ -7658,6 +7932,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1624967669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624967666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1635573224
 GameObject:
   m_ObjectHideFlags: 0
@@ -7821,6 +8107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647398353}
   - component: {fileID: 1647398354}
+  - component: {fileID: 1647398355}
   m_Layer: 0
   m_Name: Fio 7 RD (2)
   m_TagString: Untagged
@@ -7890,6 +8177,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1647398355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647398352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1677240674
 GameObject:
   m_ObjectHideFlags: 0
@@ -7900,6 +8199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1677240675}
   - component: {fileID: 1677240676}
+  - component: {fileID: 1677240677}
   m_Layer: 0
   m_Name: Fio 1 PC (10)
   m_TagString: Untagged
@@ -7969,6 +8269,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1677240677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677240674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1683770120
 GameObject:
   m_ObjectHideFlags: 0
@@ -8385,6 +8697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1786910628}
   - component: {fileID: 1786910629}
+  - component: {fileID: 1786910630}
   m_Layer: 0
   m_Name: Fio 1 RS
   m_TagString: Untagged
@@ -8402,9 +8715,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.38, y: 1.7204973, z: -0.0016517248}
   m_LocalScale: {x: 2.961493, y: 0.06, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1512009893}
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 1
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1786910629
 SpriteRenderer:
@@ -8454,6 +8768,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1786910630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786910627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1807609965
 GameObject:
   m_ObjectHideFlags: 0
@@ -8956,7 +9282,7 @@ Transform:
   m_LocalScale: {x: -0.58, y: 0.06, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1846417432
 GameObject:
@@ -8983,8 +9309,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846417432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.02, y: 5.4, z: -0.0016517248}
-  m_LocalScale: {x: 1.71, y: 0.06, z: 1}
+  m_LocalPosition: {x: -7.02, y: 5.461, z: -0.0016517248}
+  m_LocalScale: {x: 1.71, y: 0.1317, z: 1}
   m_Children: []
   m_Father: {fileID: 900465091}
   m_RootOrder: 8
@@ -9074,7 +9400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -195, y: 180}
+  m_AnchoredPosition: {x: 17, y: 146}
   m_SizeDelta: {x: 60, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1852319905
@@ -9188,6 +9514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1861328399}
   - component: {fileID: 1861328400}
+  - component: {fileID: 1861328401}
   m_Layer: 0
   m_Name: Fio 3 Imm
   m_TagString: Untagged
@@ -9257,6 +9584,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1861328401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861328398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1867746456
 GameObject:
   m_ObjectHideFlags: 0
@@ -9453,7 +9792,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1884346448
 MonoBehaviour:
@@ -9707,8 +10046,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951270890}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.5, y: 0.18, z: -0.0016517248}
-  m_LocalScale: {x: 1.44, y: 0.06, z: 1}
+  m_LocalPosition: {x: -4.5, y: 0.1478, z: -0.0016517248}
+  m_LocalScale: {x: 1.44, y: 0.097632, z: 1}
   m_Children: []
   m_Father: {fileID: 900465091}
   m_RootOrder: 2
@@ -10059,6 +10398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1970802393}
   - component: {fileID: 1970802394}
+  - component: {fileID: 1970802395}
   m_Layer: 0
   m_Name: Fio 2 RT
   m_TagString: Untagged
@@ -10078,7 +10418,7 @@ Transform:
   m_LocalScale: {x: 2.961493, y: 0.06, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1970802394
 SpriteRenderer:
@@ -10128,6 +10468,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1970802395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970802392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1974806848
 GameObject:
   m_ObjectHideFlags: 0
@@ -10138,6 +10490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1974806849}
   - component: {fileID: 1974806850}
+  - component: {fileID: 1974806851}
   m_Layer: 0
   m_Name: Fio 4 Read Data RT
   m_TagString: Untagged
@@ -10157,7 +10510,7 @@ Transform:
   m_LocalScale: {x: 2.96149, y: 0.06, z: 1}
   m_Children: []
   m_Father: {fileID: 1085906360}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1974806850
 SpriteRenderer:
@@ -10207,6 +10560,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1974806851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974806848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1982595517
 GameObject:
   m_ObjectHideFlags: 0
@@ -10217,6 +10582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1982595519}
   - component: {fileID: 1982595518}
+  - component: {fileID: 1982595520}
   m_Layer: 0
   m_Name: Fio 1 Input 1
   m_TagString: Untagged
@@ -10286,6 +10652,18 @@ Transform:
   m_Father: {fileID: 1756819371}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1982595520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982595517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a2c73f17d16a8408b4f48752d4d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2018286243
 GameObject:
   m_ObjectHideFlags: 0
@@ -10791,7 +11169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: 140}
+  m_AnchoredPosition: {x: 157, y: 106}
   m_SizeDelta: {x: 60, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094631298
