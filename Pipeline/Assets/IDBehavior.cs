@@ -53,13 +53,27 @@ public class IDBehavior : GenericStepBehavior
 				case OpScript.Tipo.TipoI:
 
 					fioRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					fioRT.GetComponent<SpriteRenderer>().color = Color.white;
-					dataReadRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					dataReadRT.GetComponent<SpriteRenderer>().color = Color.white;
-					imm.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					rd1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					rd2.GetComponent<SpriteRenderer>().color = Color.white;
-					toReg1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    fioRS.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rs);
+
+                    fioRT.GetComponent<SpriteRenderer>().color = Color.white;
+                    fioRT.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    dataReadRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    fioRS.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs));
+
+                    dataReadRT.GetComponent<SpriteRenderer>().color = Color.white;
+                    dataReadRT.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    imm.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    imm.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    rd1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    rd1.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rd);
+
+                    rd2.GetComponent<SpriteRenderer>().color = Color.white;
+                    rd2.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    toReg1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					toReg2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					toImm.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					toRD1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
@@ -70,13 +84,27 @@ public class IDBehavior : GenericStepBehavior
 				case OpScript.Tipo.Lw:
 
 					fioRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    fioRS.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rs);
+
 					fioRT.GetComponent<SpriteRenderer>().color = Color.white;
-					dataReadRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					dataReadRT.GetComponent<SpriteRenderer>().color = Color.white;
-					imm.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					rd1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					rd2.GetComponent<SpriteRenderer>().color = Color.white;
-					toReg1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    fioRT.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    dataReadRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    dataReadRS.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs));
+
+                    dataReadRT.GetComponent<SpriteRenderer>().color = Color.white;
+                    dataReadRT.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    imm.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    imm.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    rd1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    rd1.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rd);
+
+                    rd2.GetComponent<SpriteRenderer>().color = Color.white;
+                    rd2.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    toReg1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					toReg2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					toImm.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					toRD1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
@@ -87,13 +115,27 @@ public class IDBehavior : GenericStepBehavior
 				case OpScript.Tipo.Sw:
 
 					fioRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					fioRT.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					dataReadRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					dataReadRT.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					imm.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-					rd1.GetComponent<SpriteRenderer>().color = Color.white;
-					rd2.GetComponent<SpriteRenderer>().color = Color.white;
-					toReg1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    fioRS.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rs);
+
+                    fioRT.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    fioRT.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rt);
+
+                    dataReadRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    dataReadRS.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs));
+
+                    dataReadRT.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    dataReadRT.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rt);
+
+                    imm.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
+                    imm.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    rd1.GetComponent<SpriteRenderer>().color = Color.white;
+                    rd1.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    rd2.GetComponent<SpriteRenderer>().color = Color.white;
+                    rd2.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    toReg1.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					toReg2.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					toImm.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
 					toRD1.GetComponent<SpriteRenderer>().color = Color.white;
@@ -105,14 +147,23 @@ public class IDBehavior : GenericStepBehavior
 		else
 		{
 			fromIf.GetComponent<SpriteRenderer>().color = Color.white;
-			fioRS.GetComponent<SpriteRenderer>().color = Color.white;
-			fioRT.GetComponent<SpriteRenderer>().color = Color.white;
-			dataReadRS.GetComponent<SpriteRenderer>().color = Color.white;
-			dataReadRT.GetComponent<SpriteRenderer>().color = Color.white;
-			imm.GetComponent<SpriteRenderer>().color = Color.white;
-			rd1.GetComponent<SpriteRenderer>().color = Color.white;
-			rd2.GetComponent<SpriteRenderer>().color = Color.white;
-			toReg1.GetComponent<SpriteRenderer>().color = Color.white;
+            fromIf.GetComponent<FioBehavior>().ChangeDisplay("");
+            fioRS.GetComponent<SpriteRenderer>().color = Color.white;
+            fioRS.GetComponent<FioBehavior>().ChangeDisplay("");
+            fioRT.GetComponent<SpriteRenderer>().color = Color.white;
+            fioRT.GetComponent<FioBehavior>().ChangeDisplay("");
+            dataReadRS.GetComponent<SpriteRenderer>().color = Color.white;
+            dataReadRS.GetComponent<FioBehavior>().ChangeDisplay("");
+            dataReadRT.GetComponent<SpriteRenderer>().color = Color.white;
+            dataReadRT.GetComponent<FioBehavior>().ChangeDisplay("");
+            imm.GetComponent<SpriteRenderer>().color = Color.white;
+            imm.GetComponent<FioBehavior>().ChangeDisplay("");
+            rd1.GetComponent<SpriteRenderer>().color = Color.white;
+            rd1.GetComponent<FioBehavior>().ChangeDisplay("");
+            rd2.GetComponent<SpriteRenderer>().color = Color.white;
+            rd2.GetComponent<FioBehavior>().ChangeDisplay("");
+
+            toReg1.GetComponent<SpriteRenderer>().color = Color.white;
 			toReg2.GetComponent<SpriteRenderer>().color = Color.white;
 			toImm.GetComponent<SpriteRenderer>().color = Color.white;
 			toRD1.GetComponent<SpriteRenderer>().color = Color.white;
