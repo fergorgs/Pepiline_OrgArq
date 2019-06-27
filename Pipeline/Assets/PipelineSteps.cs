@@ -16,6 +16,8 @@ public class PipelineSteps : MonoBehaviour
 
 	private GameObject seedInstruction;
 
+	private float lastRg = 0;
+
 	// Start is called before the first frame update
 	void Start()
     {
@@ -43,7 +45,31 @@ public class PipelineSteps : MonoBehaviour
 		GameObject newOp = Instantiate(seedInstruction);
 
 		Color cl;
-		float rg = Random.Range(0f, 10f);
+		bool validRg = false;
+		float rg = 0;
+
+		while (!validRg)
+		{
+			rg = Random.Range(0f, 10f);
+
+			if (lastRg <= 3.3)
+			{
+				if (rg > 3.3)
+					validRg = true;
+			}
+			else if(lastRg <= 6.6)
+			{
+				if (rg <= 3.3 || rg > 6.6)
+					validRg = true;
+			}
+			else
+			{
+				if (rg <= 6.6)
+					validRg = true;
+			}
+		}
+
+		lastRg = rg;
 
 		if(rg <= 3.3f)
 			cl = new Color(Random.Range(0.5f, 1f), Random.Range(0f, 0.5f), Random.Range(0f, 0.5f));
