@@ -174,7 +174,7 @@ public class PipelineSteps : MonoBehaviour
         //IF.GetComponent<IFBehavior>().UpdateMe();
         ID.GetComponent<IDBehavior>().UpdateMe();
         EX.GetComponent<EXBehavior>().UpdateMe();
-        //MEM.GetComponent<MEMBehavior>().UpdateMe();
-        //WB.GetComponent<WBBehavior>().UpdateMe();
+        MEM.GetComponent<MEMBehavior>().UpdateMe();
+        WB.GetComponent<WBBehavior>().UpdateMe();
     }
 }

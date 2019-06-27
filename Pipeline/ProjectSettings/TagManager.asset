@@ -10,6 +10,7 @@ TagManager:
   - MEM
   - WB
   - seedOp
+  - Info
   layers:
   - Default
   - TransparentFX

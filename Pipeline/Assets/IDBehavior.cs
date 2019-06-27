@@ -59,7 +59,7 @@ public class IDBehavior : GenericStepBehavior
                     fioRT.GetComponent<FioBehavior>().ChangeDisplay("");
 
                     dataReadRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-                    fioRS.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs));
+                    dataReadRS.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs));
 
                     dataReadRT.GetComponent<SpriteRenderer>().color = Color.white;
                     dataReadRT.GetComponent<FioBehavior>().ChangeDisplay("");
@@ -118,7 +118,7 @@ public class IDBehavior : GenericStepBehavior
                     fioRS.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rs);
 
                     fioRT.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
-                    fioRT.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rt);
+                    fioRT.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rd);
 
                     dataReadRS.GetComponent<SpriteRenderer>().color = oper.GetComponent<OpScript>().onColor;
                     dataReadRS.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs));

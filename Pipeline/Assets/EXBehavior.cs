@@ -57,7 +57,7 @@ public class EXBehavior : GenericStepBehavior
                     dataWrite2.GetComponent<FioBehavior>().ChangeDisplay("");
 
                     ULAOut.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-                    ULAOut.GetComponent<FioBehavior>().ChangeDisplay("conteudo(" + operationScript.rt + ") + " + "conteudo(" + operationScript.rs + ")");
+                    ULAOut.GetComponent<FioBehavior>().ChangeDisplay("conteudo(" + operationScript.rs + ") + " + "conteudo(" + operationScript.rt + ")");
 
 					break;
 
@@ -70,6 +70,7 @@ public class EXBehavior : GenericStepBehavior
                     input2.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
 
                     readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
+                    readDataRT.GetComponent<FioBehavior>().ChangeDisplay("");
 
                     imm1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
                     imm1.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
@@ -103,70 +104,138 @@ public class EXBehavior : GenericStepBehavior
 				case OpScript.Tipo.Lw:
 
 					input1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-                    input1.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rs);
+                    input1.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs));
 
                     input2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
-					imm1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					imm2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					imm3.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					rd1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					rd2.GetComponent<SpriteRenderer>().color = Color.white;
-					rdFinal.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					dataWrite1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					dataWrite2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					ULAOut.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    input2.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
 
-					break;
+                    readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
+                    readDataRT.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    imm1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    imm1.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    imm2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    imm2.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    imm3.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    imm3.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    rd1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    rd1.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rd);
+
+                    rd2.GetComponent<SpriteRenderer>().color = Color.white;
+                    rd2.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    rdFinal.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    rdFinal.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rd);
+
+                    dataWrite1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    dataWrite1.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rt));
+
+                    dataWrite2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    dataWrite2.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rt));
+
+                    ULAOut.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    ULAOut.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs) + " + " + operationScript.imm);
+
+
+                    break;
 
 				case OpScript.Tipo.Sw:
 
 					input1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					input2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
-					imm1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					imm2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					imm3.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					rd1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
-					rd2.GetComponent<SpriteRenderer>().color = Color.white;
-					rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
-					dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
-					dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
-					ULAOut.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    input1.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs));
 
-					break;
+                    input2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    input2.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
+                    readDataRT.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    imm1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    imm1.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    imm2.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    imm2.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    imm3.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    imm3.GetComponent<FioBehavior>().ChangeDisplay(operationScript.imm);
+
+                    rd1.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    rd1.GetComponent<FioBehavior>().ChangeDisplay(operationScript.rd);
+
+					rd2.GetComponent<SpriteRenderer>().color = Color.white;
+                    rd2.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
+                    rdFinal.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
+                    dataWrite1.GetComponent<FioBehavior>().ChangeDisplay("");
+                    dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
+                    dataWrite2.GetComponent<FioBehavior>().ChangeDisplay("");
+
+                    ULAOut.GetComponent<SpriteRenderer>().color = operationScript.onColor;
+                    ULAOut.GetComponent<FioBehavior>().ChangeDisplay(StringFormat.cont(operationScript.rs) + " + " + operationScript.imm);
+
+                    break;
 
 				default:
 
 					input1.GetComponent<SpriteRenderer>().color = Color.white;
-					input2.GetComponent<SpriteRenderer>().color = Color.white;
-					readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
-					imm1.GetComponent<SpriteRenderer>().color = Color.white;
-					imm2.GetComponent<SpriteRenderer>().color = Color.white;
-					imm3.GetComponent<SpriteRenderer>().color = Color.white;
-					rd1.GetComponent<SpriteRenderer>().color = Color.white;
-					rd2.GetComponent<SpriteRenderer>().color = Color.white;
-					rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
-					dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
-					dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
-					ULAOut.GetComponent<SpriteRenderer>().color = Color.white;
-					break;
+                    input1.GetComponent<FioBehavior>().ChangeDisplay("");
+                    input2.GetComponent<SpriteRenderer>().color = Color.white;
+                    input2.GetComponent<FioBehavior>().ChangeDisplay("");
+                    readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
+                    readDataRT.GetComponent<FioBehavior>().ChangeDisplay("");
+                    imm1.GetComponent<SpriteRenderer>().color = Color.white;
+                    imm1.GetComponent<FioBehavior>().ChangeDisplay("");
+                    imm2.GetComponent<SpriteRenderer>().color = Color.white;
+                    imm2.GetComponent<FioBehavior>().ChangeDisplay("");
+                    imm3.GetComponent<SpriteRenderer>().color = Color.white;
+                    imm3.GetComponent<FioBehavior>().ChangeDisplay("");
+                    rd1.GetComponent<SpriteRenderer>().color = Color.white;
+                    rd1.GetComponent<FioBehavior>().ChangeDisplay("");
+                    rd2.GetComponent<SpriteRenderer>().color = Color.white;
+                    rd2.GetComponent<FioBehavior>().ChangeDisplay("");
+                    rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
+                    rdFinal.GetComponent<FioBehavior>().ChangeDisplay("");
+                    dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
+                    dataWrite1.GetComponent<FioBehavior>().ChangeDisplay("");
+                    dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
+                    dataWrite2.GetComponent<FioBehavior>().ChangeDisplay("");
+                    ULAOut.GetComponent<SpriteRenderer>().color = Color.white;
+                    ULAOut.GetComponent<FioBehavior>().ChangeDisplay("");
+                    break;
 			}
 		}
 		else
 		{
-			input1.GetComponent<SpriteRenderer>().color = Color.white;
-			input2.GetComponent<SpriteRenderer>().color = Color.white;
-			readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
-			imm1.GetComponent<SpriteRenderer>().color = Color.white;
-			imm2.GetComponent<SpriteRenderer>().color = Color.white;
-			imm3.GetComponent<SpriteRenderer>().color = Color.white;
-			rd1.GetComponent<SpriteRenderer>().color = Color.white;
-			rd2.GetComponent<SpriteRenderer>().color = Color.white;
-			rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
-			dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
-			dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
-			ULAOut.GetComponent<SpriteRenderer>().color = Color.white;
-		}
+            input1.GetComponent<SpriteRenderer>().color = Color.white;
+            input1.GetComponent<FioBehavior>().ChangeDisplay("");
+            input2.GetComponent<SpriteRenderer>().color = Color.white;
+            input2.GetComponent<FioBehavior>().ChangeDisplay("");
+            readDataRT.GetComponent<SpriteRenderer>().color = Color.white;
+            readDataRT.GetComponent<FioBehavior>().ChangeDisplay("");
+            imm1.GetComponent<SpriteRenderer>().color = Color.white;
+            imm1.GetComponent<FioBehavior>().ChangeDisplay("");
+            imm2.GetComponent<SpriteRenderer>().color = Color.white;
+            imm2.GetComponent<FioBehavior>().ChangeDisplay("");
+            imm3.GetComponent<SpriteRenderer>().color = Color.white;
+            imm3.GetComponent<FioBehavior>().ChangeDisplay("");
+            rd1.GetComponent<SpriteRenderer>().color = Color.white;
+            rd1.GetComponent<FioBehavior>().ChangeDisplay("");
+            rd2.GetComponent<SpriteRenderer>().color = Color.white;
+            rd2.GetComponent<FioBehavior>().ChangeDisplay("");
+            rdFinal.GetComponent<SpriteRenderer>().color = Color.white;
+            rdFinal.GetComponent<FioBehavior>().ChangeDisplay("");
+            dataWrite1.GetComponent<SpriteRenderer>().color = Color.white;
+            dataWrite1.GetComponent<FioBehavior>().ChangeDisplay("");
+            dataWrite2.GetComponent<SpriteRenderer>().color = Color.white;
+            dataWrite2.GetComponent<FioBehavior>().ChangeDisplay("");
+            ULAOut.GetComponent<SpriteRenderer>().color = Color.white;
+            ULAOut.GetComponent<FioBehavior>().ChangeDisplay("");
+        }
 	}
 }
